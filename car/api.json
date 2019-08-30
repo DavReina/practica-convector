@@ -1,0 +1,27 @@
+[
+    {
+        "function": "create",
+        "verb": "post",
+        "controller": "CarController"
+    },
+    {
+        "function": "get",
+        "verb": "get",
+        "controller": "CarController"
+    },
+    {
+        "function": "getAll",
+        "verb": "get",
+        "controller": "CarController"
+    },
+    {
+        "function": "update",
+        "verb": "put",
+        "controller": "CarController"
+    },
+    {
+        "function": "delete",
+        "verb": "delete",
+        "controller": "CarController"
+    }
+]
