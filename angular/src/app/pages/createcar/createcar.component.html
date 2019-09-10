@@ -1,0 +1,17 @@
+<h3>Crear nuevo auto</h3>
+<hr>
+<form class="example-form" [formGroup]="createForm"  (ngSubmit)="onSubmit()">
+  
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Marca" formControlName="marca">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Creado" formControlName="creado">
+  </mat-form-field>
+  
+  <button mat-mini-fab color="primary" type="submit" [disabled]="!createForm.valid">Crear</button>
+</form>
+<p>
+  Message: {{ message.value }}
+</p>
