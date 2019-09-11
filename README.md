@@ -37,7 +37,8 @@ Usar el siguente comando:
  1. Inicialmente instalar las librerias necesarias para poder depurar Functions localmente: ```npm install -g azure-functions-core-tools```
  2. Instalar las dependencias del proyecto Functions, usar el siguente comando: ```npm i``` en el directorio del proyecto.
  3. Depurar la aplicacion desde CLI usando el comando ```func start``` o desde Visual Studio Code en su `Debuger` 
- 4. Ahora desde Postaman o el que desee, usar las siguentes peticiones:
+ 4. Si usa Postman, utilice la colección ´Azure Funtions.postman_collection.json´ dispuesta dentro de la Carpeta Functions. 
+ 5. Ahora si desea hacer las peticiones manualmente, desde Postaman o el que desee, usar las siguentes peticiones:
     1. `GetById`: ```http://localhost:7071/api/getCarbyId?id=car%231```
        1. > Usar en este caso `URLencode` para enviar la peticion por URL.
     2. `GetAll`: ```http://localhost:7071/api/getAllCars```

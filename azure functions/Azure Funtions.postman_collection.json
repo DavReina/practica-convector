@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "75490d52-18fa-4360-8115-bcba7629eab7",
+		"name": "Azure Funtions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get HTTP url request funtion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/getCarbyId?id=car%231",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"getCarbyId"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "car%231"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post HTTP url request function",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"car\": {\n        \"id\": \"car#5\",\n        \"name\": \"lamborgini\",\n        \"created\": 5,\n        \"modified\": 5\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/createNewCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"createNewCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll HTTP url request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/getAllCars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"getAllCars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put HTTP url request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"car#3\",\n    \"car\": {\n        \"modified\": 50\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/updateCarAtribute",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"updateCarAtribute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete HTTP url request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"car#3\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/deleteOneCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"deleteOneCar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
