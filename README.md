@@ -5,7 +5,7 @@ Se debe instalar:
 * Node 8.x + o Node 10.x +
 * Visual Studio Code + Azure DevTools Extention
 * Postman o parecidos.
->Tener en cuenta que si se instala Node 8.x +, es necesario NVM para poder correr el proyecto de angular con Node 1.x +.
+>Tener en cuenta que si se instala Node 8.x +, es necesario NVM para poder correr el proyecto de angular con Node 10.x +.
 
 ## 1. Instalacion de Hurley
 Usar el siguente comando para instalar la herramienta que genera las imagenes de Hyperledger Fabric:
